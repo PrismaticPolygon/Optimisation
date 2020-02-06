@@ -63,7 +63,46 @@
 \begin{document}
 \maketitle
 
-Okay. How should I lay this out?
+\section*{Question 1}
+
+\section*{Question 2}
+
+\clearpage
+
+\section*{Question 3}
+
+For this problem, $9$ variables are necessary. Each relates to the amount of paint of one colour (cyan $C$, magenta $M$, or yellow $Y$) used in the creation of paint of another colour (red $R$, green $G$, blue $B$, or black $K$), e.g. $C_K$ denotes the number of gallons of cyan ($C$) paint used in the production of black ($K$) paint. The objective function is therefore:
+
+\begin{center}
+
+$max \bigl( \frac{10 \cdot (Y_R + M_R)}{2} + \frac{15 \cdot (Y_G + C_G)}{2} + \frac{25 \cdot (M_B + C_B)}{2} + \frac{25 \cdot (C_K + M_K + Y_K)}{3}\bigr)$
+
+\end{center}
+
+Each term is the amount of paint of a certain colour produced multiplied by the value of a gallon of paint of that colour: $10$ for $R$, $15$ for $G$, $25$ for $B$, and $25$ for $K$. The following constraints capture the limited quantities of paint available: $11$ gallons of $Y$, $10$ of $C$, and $5$ of $M$:
+
+\begin {center}
+
+$Y_R + Y_G + Y_K <= 11$ \\
+$C_G + C_B + C_K <= 10$ \\
+$M_B + M_K +M_R <= 5$ \\
+
+\end{center}
+
+Also necessary are constraints maintaining the correct ratios of paints used:
+
+\begin{center}
+
+$Y_R == M_R$ \\
+$Y_G == C_G$ \\
+$M_B == C_B$ \\
+$C_K == M_K == Y_K$ \\
+
+\end{center}
+
+These maintain the ratios for $R$, $G$, $B$, and $K$ paint. An optimal solution produces $2$ gallons of $C$ paint, $8$ gallons of $G$ paint, $2$ gallons of $B$ paint, and $3$ gallons of $K$ paint, for a total value of \textit{£}$220$.
+
+\clearpage
 
 \section*{Question 4}
 
