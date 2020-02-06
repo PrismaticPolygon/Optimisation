@@ -63,8 +63,61 @@
 \begin{document}
 \maketitle
 
+Okay. How should I lay this out?
+
 \section*{Question 4}
 
-\subsection*{a)}
+\subsection*{Part A} 
+
+This is a simple knapsack problem. Each variable $A, B, C, D, E, F$ is binary: whether or not the item was taken. This leads to the following function:
+
+\begin{center}
+
+$max (60A + 70B + 40C + 70D + 16E + 100F)$
+
+\end{center}
+
+in which the constants are the values (\textit{£}) of each item. The only constraint is equally simple: that the weight of the taken items does not exceed $20$kg:
+
+\begin{center}
+
+$6A + 7B + 4C + 9D + 3E + 8F <= 20$
+
+\end{center}
+
+in which the constants are the weights (\textit{kg}) of each item. An optimal solution is to take items $B$, $C$, and $F$, resulting in a total weight of $19$\textit{kg} and a total value of \textit{£}$210$.
+
+\subsection*{Part B}
+
+This part adds a new constraint:  that taking $C$ only makes sense if $D$ is also taken, but not vice versa. This can be elegantly expressed as:
+
+\begin{center}
+
+$D - C >= 0$
+
+\end{center}
+
+This condition is only unsatisfied if $D = 0$ and $C = 1$. With this constraint, an optimal solution is to take items $D$, $E$, and $F$, resulting in a total weight of $20$\textit{kg} and a total value of \textit{£}$186$.
+
+\subsection*{Part C}
+
+This part adds a further modification. It is now possible to exceed the $20$\textit{kg} limit, but with a penalty of \textit{£}$15$ for each \textit{kg} over. A new variable, $w$, is necessary. The objective function is modified to:
+
+\begin{center}
+
+$max (60A + 70B + 40C + 70D + 16E + 100F - 15w)$
+
+\end{center}
+
+to capture the cost of exceeding the weight limit. An additional constraint is also required:
+
+\begin{center}
+
+$w == 6A + 7B + 4C + 9D + 3E + 8F - 20$
+
+\end{center}
+
+to set $w$ to number of \textit{kg} over the weight limit the solution is.
+An optimal solution is to take items $A$, $B$, and $F$, resulting in a total weight of $21$\textit{kg} and a total value of \textit{£}$215$.
 
 \end{document}
