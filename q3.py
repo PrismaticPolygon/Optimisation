@@ -18,24 +18,30 @@ m_r = LpVariable("Amount of magenta paint used to make red paint", 0, None, LpIn
 m_b = LpVariable("Amount of magenta paint used to make blue paint", 0, None, LpInteger)
 m_k = LpVariable("Amount of magenta paint used to make black paint", 0, None, LpInteger)
 
-red   = (y_r + m_r) / 2
-green = (y_g + c_g) / 2
-blue  = (m_b + c_b) / 2
-black = (c_k + m_k + y_k) / 3
+r = LpVariable("Red", 0)
+g = LpVariable("Green", 0)
+b = LpVariable("Blue", 0)
+k = LpVariable("Black", 0)
 
 # Enter objective function first
-problem += 10 * red + 15 * green + 25 * blue + 25 * black, "Value of paint produced"
+problem += 10 * r + 15 * g + 25 * b + 25 * k, "Value of paint produced"
 
 # Constraints on the amount of each amount of paint
 problem += y_r + y_g + y_k <= 11, "Yellow paint threshold"
 problem += c_g + c_b + c_k <= 10, "Cyan paint threshold"
 problem += m_b + m_k + m_r <= 5, "Magenta paint threshold"
 
+problem += y_r + m_r == r, "Red mix volume"
+problem += y_g + c_g == g, "Green mix volume"
+problem += m_b + c_b == b, "Blue mix volume"
+problem += c_k + m_k + y_k == k, "Black mix volume"
+
 # Constraints maintaining ratios
 problem += y_r == m_r, "Red paint ratio"
 problem += y_g == c_g, "Green paint ratio"
 problem += m_b == c_b, "Blue paint ratio"
-problem += c_k == m_k == y_k, "Black paint ratio"
+problem += c_k == m_k, "Black paint ratio"
+problem += m_k == y_k, "Black paint sd"
 
 problem.solve()
 
