@@ -2,6 +2,10 @@ from pulp import *
 
 problem = LpProblem("q3", LpMaximize)
 
+# We have 10 gallons of cyan paint, 5 gallons of magenta paint, and 11 gallons of yellow paint.
+# Cyan, magenta, and yellow paint can be mixed to create red, green, blue, or black paint.
+# The value of a gallon of red paint is 10; green paint, 15; blue paint, 25; black paint, 25.
+
 y_r = LpVariable("Amount of yellow paint used to make red paint", 0, None, LpInteger)
 y_g = LpVariable("Amount of yellow paint used to make green paint", 0, None, LpInteger)
 y_k = LpVariable("Amount of yellow paint used to make black paint", 0, None, LpInteger)
