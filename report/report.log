@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.18)  6 FEB 2020 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.18)  7 FEB 2020 14:34
 entering extended mode
 **./report.tex
 (report.tex
@@ -267,20 +267,44 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.
+cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.s
+ty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks30
+\minrowclearance=\skip60
 )
 ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.s
 ty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip60
-\f@nch@O@elh=\skip61
-\f@nch@O@erh=\skip62
-\f@nch@O@olh=\skip63
-\f@nch@O@orh=\skip64
-\f@nch@O@elf=\skip65
-\f@nch@O@erf=\skip66
-\f@nch@O@olf=\skip67
-\f@nch@O@orf=\skip68
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
 )
 ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sectsty.sty
 "
@@ -309,58 +333,58 @@ Package tocbibind Note: Using section or other style headings.
 "
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip69
-\cftbeforetoctitleskip=\skip70
-\cftaftertoctitleskip=\skip71
-\cftbeforepartskip=\skip72
-\cftpartnumwidth=\skip73
-\cftpartindent=\skip74
-\cftbeforesecskip=\skip75
-\cftsecindent=\skip76
-\cftsecnumwidth=\skip77
-\cftbeforesubsecskip=\skip78
-\cftsubsecindent=\skip79
-\cftsubsecnumwidth=\skip80
-\cftbeforesubsubsecskip=\skip81
-\cftsubsubsecindent=\skip82
-\cftsubsubsecnumwidth=\skip83
-\cftbeforeparaskip=\skip84
-\cftparaindent=\skip85
-\cftparanumwidth=\skip86
-\cftbeforesubparaskip=\skip87
-\cftsubparaindent=\skip88
-\cftsubparanumwidth=\skip89
-\cftbeforeloftitleskip=\skip90
-\cftafterloftitleskip=\skip91
-\cftbeforefigskip=\skip92
-\cftfigindent=\skip93
-\cftfignumwidth=\skip94
-\cftbeforelottitleskip=\skip95
-\cftafterlottitleskip=\skip96
-\cftbeforetabskip=\skip97
-\cfttabindent=\skip98
-\cfttabnumwidth=\skip99
-\cftbeforesubfigskip=\skip100
-\cftsubfigindent=\skip101
-\cftsubfignumwidth=\skip102
-\cftbeforesubtabskip=\skip103
-\cftsubtabindent=\skip104
-\cftsubtabnumwidth=\skip105
+\cftparskip=\skip70
+\cftbeforetoctitleskip=\skip71
+\cftaftertoctitleskip=\skip72
+\cftbeforepartskip=\skip73
+\cftpartnumwidth=\skip74
+\cftpartindent=\skip75
+\cftbeforesecskip=\skip76
+\cftsecindent=\skip77
+\cftsecnumwidth=\skip78
+\cftbeforesubsecskip=\skip79
+\cftsubsecindent=\skip80
+\cftsubsecnumwidth=\skip81
+\cftbeforesubsubsecskip=\skip82
+\cftsubsubsecindent=\skip83
+\cftsubsubsecnumwidth=\skip84
+\cftbeforeparaskip=\skip85
+\cftparaindent=\skip86
+\cftparanumwidth=\skip87
+\cftbeforesubparaskip=\skip88
+\cftsubparaindent=\skip89
+\cftsubparanumwidth=\skip90
+\cftbeforeloftitleskip=\skip91
+\cftafterloftitleskip=\skip92
+\cftbeforefigskip=\skip93
+\cftfigindent=\skip94
+\cftfignumwidth=\skip95
+\cftbeforelottitleskip=\skip96
+\cftafterlottitleskip=\skip97
+\cftbeforetabskip=\skip98
+\cfttabindent=\skip99
+\cfttabnumwidth=\skip100
+\cftbeforesubfigskip=\skip101
+\cftsubfigindent=\skip102
+\cftsubfignumwidth=\skip103
+\cftbeforesubtabskip=\skip104
+\cftsubtabindent=\skip105
+\cftsubtabnumwidth=\skip106
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -405,12 +429,12 @@ f.mkii"
 \scratchbox=\box33
 \nofMPsegments=\count126
 \nofMParguments=\count127
-\everyMPshowfont=\toks30
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count128
 \MPscratchDim=\dimen146
 \MPnumerator=\count129
 \makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks31
+\everyMPtoPDFconversion=\toks32
 )
 ("C:\Users\user\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-b
 ase.sty"
@@ -471,19 +495,21 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {C:/Users/user/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2
+[2] [3
 
-] [3
+] [4
+
+] [5
 
 ] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 5298 strings out of 492450
- 80449 string characters out of 3120471
- 160785 words of memory out of 3000000
- 9579 multiletter control sequences out of 15000+200000
+ 5816 strings out of 492450
+ 86525 string characters out of 3120471
+ 176296 words of memory out of 3000000
+ 10087 multiletter control sequences out of 15000+200000
  10949 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,10n,48p,406b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,11n,48p,388b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/user/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/M
@@ -498,9 +524,9 @@ s/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/user/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (3 pages, 126559 bytes).
+Output written on report.pdf (5 pages, 133731 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
