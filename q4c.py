@@ -13,8 +13,6 @@ w = LpVariable("Excess", 0, None, LpInteger)
 weight = 6 * A + 7 * B + 4 * C + 9 * D + 3 * E + 8 * F
 
 problem += (60 * A + 70 * B + 40 * C + 70 * D + 16 * E + 100 * F) - 15 * w, "Value of items"
-
-problem += D - C >= 0, "Constraint"
 problem += w == weight - 20, "Excess"
 
 problem.solve()
