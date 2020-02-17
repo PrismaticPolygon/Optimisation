@@ -34,6 +34,7 @@
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{bbold}
 
 \usepackage{xcolor,colortbl}
 \definecolor{green}{rgb}{0.1,0.1,0.1}
@@ -223,9 +224,69 @@ $T_2 = \left(
 
 \end{center}
 
-As there are no positive pivot values in $t$, this LP is \textit{unbounded}.
+As there are no positive pivot values in $t$, this LP is unbounded. \\\\
+This is not in of itself a \textit{certificate} of unboundedness, however. A certificate comprises $x' = \overline x + td$ where $\overline x$ is a feasible solution to the LP and $d$ is a vector such that:
 
-\clearpage
+\begin{enumerate}
+
+\item{$Ad = \mathbb{0}$}
+\item{$d \leq \mathbb{0}$}
+\item{$c^Td \leq \mathbb{0}$}
+
+\end{enumerate}
+
+Examining $T_2$ produces a feasible solution: $\overline x^T = (2, 0, 0, 5, 0, 2)$.
+
+\begin{align}
+    x' &= \begin{bmatrix}
+           2 \\
+           0 \\
+           0 \\
+           5 \\
+		0 \\
+		2 \\
+         \end{bmatrix}
+	+ d
+	= \begin{bmatrix}
+           2 + d_1 \\
+           d_2\\
+           d_3 \\
+           5 + d_4\\
+		d_5 \\
+		2 + d_6\\
+         \end{bmatrix}
+\end{align}
+
+Plugging this in to the original constraints:
+
+\begin{center}
+
+$-2d_1 + d_2 + d_3 + d_4 = 0$ \\
+$d_1 - d_2 + d_5 = 0$ \\
+$2d_1 - 3d_2 - d_3 + d_6 = 0$
+
+\end{center}
+
+Through trial and error, a solution to this system of equations may be found: $d^T = (1, 1, 1, 0, 0, 2)$. The certificate of unboundedness for this LP is therefore:
+
+\begin{align}
+    x' &= \begin{bmatrix}
+           2 \\
+           0 \\
+           0 \\
+           5 \\
+		0 \\
+		2 \\
+         \end{bmatrix}
+	+ d \begin{bmatrix}
+           1 \\
+           1 \\
+           1 \\
+           0 \\
+		0 \\
+		2 \\
+         \end{bmatrix}
+\end{align}
 
 \section*{Question 3}
 
